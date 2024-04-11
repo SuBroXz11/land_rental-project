@@ -1,0 +1,42 @@
+body{
+    overflow-x: hidden;
+}
+.hero-overlay2 {
+    overflow: hidden;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    height: 206%;
+    width:130%;
+    background-color: hsl(var(--n) / var(--tw-bg-opacity));
+    --tw-bg-opacity: 0.5;
+}
+
+
+/* Styles for small screens */
+@media only screen and (max-width: 768px) {
+    /* Your CSS styles for small screens here */
+    .hero-overlay2 {
+        overflow: hidden;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        height: 135%;
+        width:122%;
+        background-color: hsl(var(--n) / var(--tw-bg-opacity));
+        --tw-bg-opacity: 0.5;
+    }
+  }
+  
+  /* Styles for medium screens */
+  @media only screen and (min-width: 769px) and (max-width: 1024px) {
+    /* Your CSS styles for medium screens here */
+    .hero-overlay2 {
+        overflow: hidden;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        height: 206%;
+        width:130%;
+        background-color: hsl(var(--n) / var(--tw-bg-opacity));
+        --tw-bg-opacity: 0.5;
+    }
+  }
+  

@@ -50,7 +50,7 @@ const router = createBrowserRouter([
         loader: landingLoader(queryClient),
       },
       {
-        path: 'products',
+        path: 'land-for-sale',
         element: <Products />,
         errorElement: <ErrorElement />,
         loader: productsLoader(queryClient),

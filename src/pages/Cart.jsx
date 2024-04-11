@@ -8,13 +8,20 @@ const Cart = () => {
   const numItemsInCart = useSelector((state) => state.cartState.numItemsInCart);
 
   if (numItemsInCart === 0) {
-    return <SectionTitle text='Your cart is empty' />;
+    return (
+      <>
+    <SectionTitle text='You have no bookings right now. Book now to see changes' />
+    <div className="align-element">
+      <Link className='btn btn-primary btn-block my-10' to='/land-for-sale'>Book now</Link>
+    </div>
+    </>
+  );
   }
 
   return (
     <>
       <SectionTitle text='Shopping Cart' />
-      <div className='mt-8 grid gap-8 lg:grid-cols-12'>
+      <div className='mt-8 grid gap-8 lg:grid-cols-12 align-element py-20'>
         <div className='lg:col-span-8'>
           <CartItemsList />
         </div>

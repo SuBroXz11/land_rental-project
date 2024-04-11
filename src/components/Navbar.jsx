@@ -24,7 +24,7 @@ const Navbar = () => {
             to='/'
             className='hidden lg:flex btn btn-primary text-3xl items-center'
           >
-            C
+            LOGO
           </NavLink>
           {/* DROPDOWN */}
           <div className='dropdown'>
@@ -54,14 +54,14 @@ const Navbar = () => {
             <BsMoonFill className='swap-off h-4 w-4' />
           </label>
           {/* CART LINK */}
-          <NavLink to='/cart' className='btn btn-ghost btn-circle btn-md ml-4'>
+          {/* <NavLink to='/cart' className='btn btn-ghost btn-circle btn-md ml-4'>
             <div className='indicator'>
               <BsCart3 className='h-6 w-6' />
               <span className='badge badge-sm badge-primary indicator-item'>
                 {numItemsInCart}
               </span>
             </div>
-          </NavLink>
+          </NavLink> */}
         </div>
       </div>
     </nav>
