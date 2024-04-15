@@ -1,6 +1,7 @@
 import { useSelector } from 'react-redux';
 import { CartItemsList, SectionTitle, CartTotals } from '../components';
 import { Link } from 'react-router-dom';
+import BookingHero from '../components/BookingHero';
 
 const Cart = () => {
   const user = useSelector((state) => state.userState.user);
@@ -10,10 +11,8 @@ const Cart = () => {
   if (numItemsInCart === 0) {
     return (
       <>
-    <SectionTitle text='You have no bookings right now. Book now to see changes' />
-    <div className="align-element">
-      <Link className='btn btn-primary btn-block my-10' to='/land-for-sale'>Book now</Link>
-    </div>
+    <SectionTitle text='You have no bookings right now.'/>
+    <BookingHero/>
     </>
   );
   }

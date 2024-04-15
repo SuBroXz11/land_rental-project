@@ -28,6 +28,7 @@ import { action as registerAction } from './pages/Register';
 import { action as loginAction } from './pages/Login';
 import { action as checkoutAction } from './components/CheckoutForm';
 import { store } from './store';
+import TestSingle from './components/TestSingle';
 
 const queryClient = new QueryClient({
   defaultOptions: {
@@ -62,7 +63,12 @@ const router = createBrowserRouter([
         loader: singleProductLoader(queryClient),
       },
       {
-        path: 'cart',
+        path: 'land/:id',
+        element: <TestSingle />,
+        errorElement: <ErrorElement />,
+      },
+      {
+        path: 'bookings',
         element: <Cart />,
       },
       {

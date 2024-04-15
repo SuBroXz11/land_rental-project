@@ -1,5 +1,6 @@
 export default function Footer() {
   return (
+    <>
     <footer className="footer grid-rows-2 p-10 bg-neutral text-neutral-content">
   <nav className=" align-element">
     <h6 className="footer-title">Services</h6> 
@@ -43,5 +44,11 @@ export default function Footer() {
     <a className="link link-hover">Android</a>
   </nav>
 </footer>
+<footer className="footer footer-center p-0 bg-base-300 text-base-content">
+  <aside>
+    <p>Copyright © 2024 - All right reserved by Land Rental Ltd</p>
+  </aside>
+</footer>
+</>
   )
 }
